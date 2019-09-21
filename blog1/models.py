@@ -1,6 +1,5 @@
 from django.conf import settings
 from django.db import models
-from django.utils import timezone
 
 
 class Upload(models.Model):
@@ -12,7 +11,7 @@ class Upload(models.Model):
     state = models.TextField()
     pincode = models.TextField()
 
-    def upload(self):
+    def Upload(self):
         self.save()
 
     def __str__(self):
